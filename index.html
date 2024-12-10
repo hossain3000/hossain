@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossain Industries</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for quick setup */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f4f4f4, #e9e9e9);
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        .header button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .recently-launched {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .recently-launched h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product button {
+            margin-top: 10px;
+            background: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to Hossain Industries</h1>
+            <p>Driving innovation in cars, motorcycles, and tech.</p>
+            <button onclick="scrollToSection('recently-launched')">Explore Now</button>
+        </div>
+    </header>
+
+    <!-- Recently Launched Section -->
+    <section id="recently-launched" class="recently-launched">
+        <h2>Recently Launched</h2>
+        <div class="products">
+            <!-- Car 1 -->
+            <div class="product">
+                <img src="file:///C:/Users/RIFAT%20HOSSAIN/Downloads/car%201.webp" alt="Car 1">
+                <h3>Hossain Falcon X</h3>
+                <button>Learn More</button>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="product">
+                <img src="file:///C:/Users/RIFAT%20HOSSAIN/Downloads/car%202.jpg" alt="Car 2">
+                <h3>Hossain Thunderbolt</h3>
+                <button>Learn More</button>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="product">
+                <img src="file:///C:/Users/RIFAT%20HOSSAIN/Downloads/car%203.avif" alt="Car 3">
+                <h3>Hossain Velocity Z</h3>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Hossain Industries. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
